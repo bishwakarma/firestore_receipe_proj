@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <title>Sunil's Ultimate Recipie</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header h1">
+                Sunil's Ultimate Recipie
+            </div>
+
+            <div class="card-body">
+                <!--Card Body for recipie-->
+                <form id="add_recipies" name="add_recipies" class="col-12">
+                    <div class="row">
+                        <label for="recipie_title" class="col-2">Recipie Title</label>
+                        <div class="col-6"></div>
+                        <input type="text" id="recipie_title" class="form-control"
+                        placeholder="Enter Title"/>
+                    </div>
+
+                    <div class="row">
+                        <label for="ingredient_one" class="col-2">Ingredient 1</label>
+                        <div class="col-6"></div>
+                        <input type="text" id="ingredient_one" class="form-control"
+                        placeholder="Enter Ingredient"/>
+                    </div>
+                    <div class="row">
+                        <label for="ingredient_two" class="col-2">Ingredient 2</label>
+                        <div class="col-6"></div>
+                        <input type="text" id="ingredient_two" class="form-control"
+                        placeholder="Enter Ingredient"/>
+                    </div>
+                    <div class="row">
+                        <label for="ingredient_three" class="col-2">Ingredient 3</label>
+                        <div class="col-6"></div>
+                        <input type="text" id="ingredient_three" class="form-control"
+                        placeholder="Enter Ingredient"/>
+                    </div>
+                    <div class="row">
+                        <label for="ingredient_four" class="col-2">Ingredient 4</label>
+                        <div class="col-6"></div>
+                        <input type="text" id="ingredient_four" class="form-control"
+                        placeholder="Enter Ingredient"/>
+                    </div>
+
+                    <div class="row">
+                        <label for="add_button" class="col-2"></label>
+                        <div class="col-4"></div>
+                        <button type="button" class="btn btn-primary" id="add_button">Add Recipie</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="card-body">
+                <!--Card-Body for documents-->
+                <div class="row">
+                    <label for="show_button" class="col-2"></label>
+                    <div class="col-4">
+                        <button type="button" class="btn btn-primary" id="show_button">Show Recipie</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12" id="recipie_data"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery-->
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script type="module" src="app-index.js"></script>
+</body>
+</html>
